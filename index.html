@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="calculator">
+        <div class="history" id="history"></div>
+        <div class="display" id="display">0</div>
+        <div class="calculator-button-keys">
+          <div class="calculator-button-keys-row1 my-grid">
+            <button class="calculator-button-key calculator-advanced" data-action="clear-all">
+              AC
+            </button>
+            <button class="calculator-button-key calculator-advanced" data-action="clear-entry">
+              CE
+            </button>
+            <button class="calculator-button-key calculator-advanced" data-value=".">.</button>
+            <button class="calculator-button-key calculator-advanced" data-action="ans">
+              ANS
+            </button>
+          </div>
+
+          <div class="calculator-button-keys-row2 my-grid">
+            <button class="calculator-button-key calculator-advanced" data-fn="sin">
+              sin
+            </button>
+            <button class="calculator-button-key calculator-advanced" data-fn="cos">
+              cos
+            </button>
+            <button class="calculator-button-key calculator-advanced" data-fn="tan">
+              tan
+            </button>
+            <button class="calculator-button-key calculator-advanced" data-fn="log">
+              log
+            </button>
+          </div>
+
+          <div class="calculator-button-keys-row3 my-grid">
+            <button class="calculator-button-key calculator-advanced" data-fn="sqrt">
+              &Sqrt;
+            </button>
+            <button class="calculator-button-key calculator-advanced " data-operator="^">^</button>
+            <button class="calculator-button-key calculator-advanced" data-value="(">(</button>
+            <button class="calculator-button-key calculator-advanced" data-value=")">)</button>
+          </div>
+
+          <div class="calculator-button-keys-row4 my-grid">
+            <button class="calculator-button-key calculator-advanced" data-fn="factorial">!</button>
+            <button class="calculator-button-key calculator-advanced" data-fn="exp">
+              e
+            </button>
+            <button class="calculator-button-key calculator-advanced" data-value="π">
+              &pi;
+            </button>
+            <button class="calculator-button-key calculator-advanced" data-operator="*">
+              &times;
+            </button>
+          </div>
+
+          <div class="calculator-button-keys-row5 my-grid">
+            <button class="calculator-button-key calculator-number" data-value="7">7</button>
+            <button class="calculator-button-key calculator-number" data-value="8">8</button>
+            <button class="calculator-button-key calculator-number" data-value="9">9</button>
+            <button class="calculator-button-key calculator-arithmetic" data-operator="+">
+              +
+            </button>
+          </div>
+
+          <div class="calculator-button-keys-row6 my-grid">
+            <button class="calculator-button-key calculator-number" data-value="4">4</button>
+            <button class="calculator-button-key calculator-number" data-value="5">5</button>
+            <button class="calculator-button-key calculator-number" data-value="6">6</button>
+            <button class="calculator-button-key calculator-arithmetic" data-operator="-">
+              -
+            </button>
+          </div>
+
+          <div class="calculator-button-keys-row7 my-grid">
+            <button class="calculator-button-key calculator-number" data-value="1">1</button>
+            <button class="calculator-button-key calculator-number" data-value="2">2</button>
+            <button class="calculator-button-key calculator-number" data-value="3">3</button>
+            <button class="calculator-button-key calculator-arithmetic" data-operator="/">
+              &divide;
+            </button>
+          </div>
+
+        </div>
+
+        <div class="calculator-button-keys-row8">
+          <button class="calculator-button-key calculator-number" data-value="0">0</button>
+          <button class="calculator-button-key calculator-number" data-value="00">00</button>
+          
+          <button class="calculator-button-key calculator-arithmetic" data-action="equals">
+            &equals;
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
