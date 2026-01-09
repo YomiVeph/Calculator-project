@@ -1,5 +1,5 @@
 "use strict";
-console.log("Calculator script loaded.");
+// Calculator Logic
 document.addEventListener("DOMContentLoaded", () => {
   const display = document.getElementById("display");
   const historyDisplay = document.getElementById("history");
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     historyDisplay.prepend(historyEntry);
   }
 
+  // Factorial function
   function factorial(n) {
     if (n < 0) return NaN;
     if (n === 0 || n === 1) return 1;
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return res;
   }
 
+  //To Evaluate input string
   function evaluateInput(input) {
     let evalStr = input;
 
@@ -49,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/log\(/g, "Math.log10(");
     return eval(evalStr);
   }
-
+  // Button event listeners
   document.querySelectorAll("button").forEach((btn) => {
     btn.addEventListener("click", () => {
       if (btn.dataset.value) {
@@ -119,7 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //Keyboard support
-
   document.addEventListener("keydown", (e) => {
     const key = e.key;
     if (!isNaN(key)) {
